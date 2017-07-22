@@ -1,0 +1,5 @@
+<button (click)="backSurvey()">Back</button>
+<h3>{{ survey.question }}</h3>
+<div>
+  <button *ngFor="let reponse of survey.reponses" md-raised-button (click)="chooseReponse(reponse)">{{ reponse.display }}</button>
+</div>

@@ -1,0 +1,105 @@
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  .close-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    cursor: pointer;
+    i {font-size: xx-large !important;}
+  }
+  nav {
+    a {
+      text-transform: uppercase;
+      display: block;
+      text-align: justify;
+      font-size: 1.5em;
+      cursor: pointer;
+      margin: 25% 0;
+      padding: 20px 10px;
+      z-index: 2;
+      position: relative;
+      overflow: hidden;
+    }
+    a::after {
+      content: '';
+      position: absolute;
+      top: -25px;
+      left: -70px;
+      width: 50px;
+      height: 100px;
+      z-index: -1;
+      background-color: rgba(255, 255, 255, 0.20);
+      transform: rotate(33deg);
+      transition: 0.3s all ease-in-out;
+    }
+    a:hover::after { left: 300px; }
+  }
+}
+
+
+
+.drawer {
+  display: block;
+  position: absolute;
+  height: 40px;
+  width: 25px;
+  border: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  font-size: 26px;
+  line-height: 56px;
+  font-family: Helvetica,Arial,sans-serif;
+  margin: 8px 20px;
+  top: 0;
+  right: 0;
+  color: black;
+  z-index: 4;
+  transition: 0.2s right ease-in-out;
+}
+
+.drawer-hidden { right: 1000px; }
+
+.menu {
+  cursor: pointer;
+  margin: 0 auto;
+  width: 25px;
+  height: 40px;
+  z-index: 5;
+  span.menu-global {
+    backface-visibility: hidden;
+    position: absolute;
+    left: 0;
+    border-top: 2px solid black;
+    width: 100%;
+    transition: 0.4s;
+  }
+  span.menu-global:nth-child(1) {top: 12px;}
+  span.menu-global:nth-child(2) {top: 18px;}
+  span.menu-global:nth-child(3) {top: 24px;}
+}
+.menu-clicked {
+  span.menu-global:nth-child(1) {
+    backface-visibility: hidden;
+    top: 15px;
+    transform: rotate(40deg);
+    transition: 0.4s;
+  }
+  span.menu-global:nth-child(2) {
+    opacity: 0;
+  }
+  span.menu-global:nth-child(3) {
+    backface-visibility: hidden;
+    top: 15px;
+    transform: rotate(-400deg);
+    transition: 0.4s;
+  }
+}

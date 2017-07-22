@@ -1,0 +1,55 @@
+<div class="index">
+  
+  <div class="intro">
+      <h1>Votre artisan {{ city ? 'à ' + city.name : "proche de chez vous" }}<br>
+      pour une intervention<br>
+      en moins de 20 minutes</h1>
+  </div>
+  
+  <div class="bloc-index" (click)="goTo('serrurerie')">
+      <div class="title align-right">
+          <h1 class="red-color">Serrurerie</h1>
+      </div>
+      <div class="content">
+          <div class="description center red-bg">
+              <h1>Serrurerie</h1>
+              <p>Porte claquée, porte fermée à clés, effraction, cambriolage?</p>
+          </div>
+          <div class="img img-serrurier-mobile"></div>
+      </div>
+  </div>
+  
+  <div class="bloc-index" (click)="goTo('plomberie')">
+      <div class="title align-left">
+          <h1 class="blue-color">Plomberie</h1>
+      </div>
+      <div class="content row-reverse">
+          <div class="description center blue-bg">
+              <h1>Plomberie</h1>
+              <p>Fuite d'eau, Panne de ballon / chauffe-eau / chaudière, WC Bouchés?</p>
+          </div>
+          <div class="img img-plomberie-mobile"></div>
+      </div>
+  </div>
+
+  <div class="bloc-index" (click)="goTo('electricite')">
+      <div class="title align-right">
+          <h1 class="orange-color">Électricite</h1>
+      </div>
+      <div class="content">
+          <div class="description center orange-bg">
+              <h1>Électricite</h1>
+              <p>Panne électrique, compteur électrique, detecteur de fumée, tableau électrique ?</p>
+          </div>
+          <div class="img img-electricite-mobile"></div>
+      </div>
+  </div>
+
+  <div class="line grey-bg"></div>
+
+  <app-competence style="width: 100%;"></app-competence>
+  <app-assurance class="app-assu"></app-assurance>
+
+  <div class="line grey-bg"></div>
+  
+</div>

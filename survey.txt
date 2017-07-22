@@ -1,0 +1,73 @@
+(df) = lesdepanneursfrançais
+(md) = mesdepanneursfrançais
+(&moi) = depannetmoi
+
+Plomberie
+  - quel est votre problèmme ? (df)
+  j'ai une fuite (df)
+    - quel elément fuit ?
+    chauffe-eau / cumulus
+      - De quel type de chauffe-eau s'agit-il ?
+      gaz
+        => Recherche de fuite chauffe-eau au gaz : 90€
+      electrique
+        => Réparation du chauffe-eau : 90€
+      autre / je ne sais pas
+        => Réparation du chauffe-eau : 90€
+    lavabo de salle de bains
+      => Réparation d'un matériel du lavabo 90€
+    bidet
+      => Réparation d'un matériel du bidet 90€
+    baignoire
+      => Recherche de fuite 90€
+    douche
+      => Recherche de fuite 90€
+    lave-linge
+      => Réparation d'un matériel du fuite 90€
+    wc
+      => Réparation d'un matériel des WC 90€ 
+    au niveau du mur/plafond
+      => Recherche de fuite avec destruction 90€
+    evier de cuisine chaudiere
+      => Réparation d'un matériel de l' évier 90€
+    chaudiere
+      - de quel type de chaudiere sagit il ?
+      electrique
+        => Recherche de fuite chaudière electrique 90€
+      gaz
+        => Recherche de fuite chaudière gaz 90€
+      condensation
+        => Recherche de fuite chaudière à condensation 90€
+      fioul
+        => Recherche de fuite chaudière au fioul 90€
+      autre/je ne sais pas
+        => Réparation d'un matériel de la chaudiere 90€
+    radiateur
+      - De quel type de radiateur s'agit-il ?
+      collectif
+        => Réparation d'un matériel du chauffage collectif 90€
+      individuel
+        => Réparation d'un matériel du chauffage individuel 90€
+    robinet
+      => Réparation d'un robinet 90€
+    lave-vaiselle
+    => Réparation d'un matériel du lave-vaisselle 90€
+    ma fuite ne se trouve pas içi
+  j'ai besoin d'un débouchage (df)
+  j'ai un autre probleme (df)
+  je veux remplacer un materiel (df)
+  - ou se situe votre probleme ? (md)
+  wc (md)
+  lavabo / evier (md)
+  douche / baignoire (md)
+  colone generale d'immeuble (md)
+  tuyauterie / canalisation (md)
+  chaudiere / chauffe-eau / ballon d'eau chaude (md)
+  tuyeau de la mhacine à laver / du lave-vaiselle (md)
+  autre (md)
+  - quel est votre probleme ? (&moi)
+  je veux remplacer un element (&moi)
+  j'ai une fuite (&moi)
+  j'ai reçu une facture d'eau elevé ou une alerte de mon fournisseur d'eau (&moi)
+  j'ai un ou plusieurs equipement sanitaires bouchés dans une meme piece (&moi)
+  j'ai plusieurs equipements sanitaires bouchés dans plusieurs pièces (&moi)
